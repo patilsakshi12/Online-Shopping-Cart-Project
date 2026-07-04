@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome To Online Shop</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2,
+    #f093fb);
+    overflow:hidden;
+}
+
+.card{
+    width:420px;
+    background:rgba(255,255,255,0.95);
+    padding:45px 35px;
+    border-radius:20px;
+    text-align:center;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.2);
+
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+h1{
+    color:#5a189a;
+    font-size:34px;
+    font-weight:700;
+    line-height:1.3;
+}
+
+.underline{
+    width:120px;
+    height:4px;
+    background:#c77dff;
+    margin:15px auto 35px;
+    border-radius:10px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    padding:14px;
+    margin:15px 0;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+.user{
+    background:linear-gradient(to right,#4361ee,#3a0ca3);
+    box-shadow:0 8px 18px rgba(67,97,238,.35);
+}
+
+.register{
+    background:linear-gradient(to right,#ff4d6d,#ff758f);
+    box-shadow:0 8px 18px rgba(255,77,109,.35);
+}
+
+.admin{
+    background:linear-gradient(to right,#7209b7,#560bad);
+    box-shadow:0 8px 18px rgba(114,9,183,.35);
+}
+
+.footer{
+    margin-top:25px;
+    font-size:13px;
+    color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>
+        Welcome To<br>
+        Online Shop
+    </h1>
+
+    <div class="underline"></div>
+
+    <a href="login.jsp" class="btn user">
+        User Login
+    </a>
+
+    <a href="register.html" class="btn register">
+        User Register
+    </a>
+
+    <a href="adminLogin.jsp" class="btn admin">
+        Admin Login
+    </a>
+
+    <div class="footer">
+        Shop Smart • Shop Easy
+    </div>
+
+</div>
+
+</body>
+</html>
